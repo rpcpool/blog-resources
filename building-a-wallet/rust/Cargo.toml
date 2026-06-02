@@ -1,0 +1,38 @@
+[package]
+name = "building-a-wallet"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "step1_fetch_state"
+path = "src/step1_fetch_state.rs"
+
+[[bin]]
+name = "step2_stream_updates"
+path = "src/step2_stream_updates.rs"
+
+[[bin]]
+name = "step3_tx_history"
+path = "src/step3_tx_history.rs"
+
+[[bin]]
+name = "step4_send_sol"
+path = "src/step4_send_sol.rs"
+
+[[bin]]
+name = "step5_send_tokens"
+path = "src/step5_send_tokens.rs"
+
+[dependencies]
+yellowstone-grpc-client = "13"
+yellowstone-grpc-proto = "12"
+tokio = { version = "1", features = ["full"] }
+futures = "0.3"
+bs58 = "0.5"
+anyhow = "1"
+reqwest = { version = "0.12", features = ["json"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+solana-client = "3"
+solana-sdk = "3"
+spl-token = "6"

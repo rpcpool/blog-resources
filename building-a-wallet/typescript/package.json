@@ -1,0 +1,23 @@
+{
+  "name": "building-a-wallet",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "step1": "ts-node step1-fetch-state.ts",
+    "step2": "ts-node step2-stream-updates.ts",
+    "step3": "ts-node step3-tx-history.ts",
+    "step4": "ts-node step4-send-sol.ts",
+    "step5": "ts-node step5-send-tokens.ts"
+  },
+  "dependencies": {
+    "@triton-one/yellowstone-grpc": "^5.0.8",
+    "@solana/web3.js": "^1.98.0",
+    "@solana/spl-token": "^0.4.9",
+    "bs58": "^6.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "@types/node": "^20.0.0"
+  }
+}
