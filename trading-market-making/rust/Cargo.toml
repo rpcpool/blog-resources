@@ -1,0 +1,38 @@
+[package]
+name = "trading-market-making"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "step1_dragonmouth"
+path = "src/step1_dragonmouth.rs"
+
+[[bin]]
+name = "step2_deshred"
+path = "src/step2_deshred.rs"
+
+[[bin]]
+name = "step3_priority_fee"
+path = "src/step3_priority_fee.rs"
+
+[[bin]]
+name = "step4_send_jet"
+path = "src/step4_send_jet.rs"
+
+[[bin]]
+name = "reproduce_deshred_latency"
+path = "src/reproduce_deshred_latency.rs"
+
+[dependencies]
+yellowstone-grpc-client = "13"
+yellowstone-grpc-proto = "12"
+tokio = { version = "1", features = ["full"] }
+futures = "0.3"
+bs58 = "0.5"
+anyhow = "1"
+reqwest = { version = "0.12", features = ["json"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+solana-client = "3"
+solana-sdk = "3"
+tonic = { version = "0.14", features = ["tls-native-roots"] }

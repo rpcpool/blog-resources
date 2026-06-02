@@ -1,0 +1,22 @@
+{
+  "name": "trading-market-making",
+  "version": "1.0.0",
+  "description": "Code examples for the Triton One trading and market making guide",
+  "scripts": {
+    "step1": "npx ts-node step1-dragonmouth.ts",
+    "step2": "npx ts-node step2-deshred.ts",
+    "step3": "npx ts-node step3-priority-fee.ts",
+    "step4": "npx ts-node step4-send-jet.ts",
+    "combined": "npx ts-node combined.ts"
+  },
+  "dependencies": {
+    "@triton-one/yellowstone-grpc": "^5.0.8",
+    "@solana/web3.js": "^1.98.0",
+    "bs58": "^6.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "@types/node": "^20.0.0"
+  }
+}
