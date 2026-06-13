@@ -23,6 +23,18 @@ path = "src/step4_send_jet.rs"
 name = "reproduce_deshred_latency"
 path = "src/reproduce_deshred_latency.rs"
 
+[[bin]]
+name = "bench_deshred_vs_normal"
+path = "src/bench_deshred_vs_normal.rs"
+
+[[bin]]
+name = "test_blockmeta"
+path = "src/test_blockmeta.rs"
+
+[[bin]]
+name = "test_all_filters"
+path = "src/test_all_filters.rs"
+
 [dependencies]
 yellowstone-grpc-client = "13"
 yellowstone-grpc-proto = "12"
